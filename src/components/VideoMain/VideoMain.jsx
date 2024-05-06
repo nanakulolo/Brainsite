@@ -1,6 +1,6 @@
 import "./VideoMain.scss";
 
-function VideoMain(props) { 
+function VideoMain(props) {
   return (
     <div className="video">
       <video
