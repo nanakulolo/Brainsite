@@ -1,0 +1,346 @@
+@use "../../styles/partials/index.scss" as *;
+
+//Mobile Screen (below 767 pixels)
+
+.comments {
+  padding: 5%;
+  font-weight: 1000;
+  display: flex;
+  flex-direction: column;
+
+  &__intro {
+    font-weight: 1000;
+  }
+  &__container {
+    display: flex;
+    margin-top: 1.125rem;
+
+    .comments__image {
+      @include avatar-icon-mobile();
+      margin-top: 1.875rem;
+    }
+    .comments__subcontainer {
+      display: flex;
+      flex-direction: column;
+    }
+    .comments__header {
+      margin-left: 1.25rem;
+      font-size: $body-font-size-mobile;
+      color: $text-tertiary;
+    }
+    .comments__form {
+      margin-left: 0.625rem;
+
+      textarea::placeholder {
+        color: $text-quinary;
+      }
+      #comment {
+        width: 100%;
+        height: 6.25rem;
+        margin-top: 0.625rem;
+        font-size: $body-font-size-mobile;
+        padding: 4%;
+        background-color: $background-tertiary;
+        border-radius: 0.313rem;
+        border-color: $border-tertiary;
+      }
+      .comments__button {
+        width: 100%;
+        padding: 5%;
+        background-color: $button-primary;
+        color: $text-secondary;
+        font-size: $button-font-size-mobile;
+        border-radius: 0.313rem;
+        border: none;
+        background-image: url(../../assets/Icons/add_comment.svg);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-position-x: 0.625rem;
+        background-size: 12%;
+        margin-top: 0.625rem;
+      }
+    }
+  }
+}
+
+.comments__divider {
+  margin-top: 1.875rem;
+  transform: translateX(-3.063rem);
+}
+.commenter {
+  display: flex;
+  margin-top: 1rem;
+  border-bottom: $border-tertiary 0.125rem solid;
+  padding-bottom: 1rem;
+  transform: translateX(-2.813rem);
+  transform: translateX(-3.063rem);
+
+  &__image {
+    @include avatar-icon-mobile();
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+
+    .commenter__subcontainer {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+
+      .commenter__name {
+        font-weight: 1000;
+        font-size: $body-font-size-mobile;
+      }
+      .commenter__date {
+        font-weight: 500;
+        font-size: $body-font-size-mobile;
+        color: $text-tertiary;
+      }
+    }
+    .commenter__text {
+      font-weight: 100;
+      font-size: $body-font-size-mobile;
+    }
+  }
+  &__date {
+    color: $text-primary;
+  }
+}
+
+//Tablet Screen (768 pixels - 1279 pixels)
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .comments {
+    padding: 5%;
+    padding-bottom: 0%;
+    font-weight: 1000;
+    display: flex;
+    flex-direction: column;
+
+    &__intro {
+      font-weight: 1000;
+    }
+    &__container {
+      display: flex;
+      margin-top: 1.125rem;
+
+      .comments__image {
+        @include avatar-icon-mobile();
+        margin-top: 1.875rem;
+        transform: translateX(0.5rem);
+      }
+      .comments__subcontainer {
+        display: flex;
+        flex-direction: column;
+        width: 43.75rem;
+      }
+      .comments__header {
+        margin-left: 1.25rem;
+        font-size: $body-font-size-tablet;
+        color: $text-tertiary;
+      }
+      .comments__form {
+        margin-left: 0.625rem;
+        display: flex;
+
+        textarea::placeholder {
+          color: $text-quinary;
+        }
+        #comment {
+          width: 21.5rem;
+          height: 3.25rem;
+          margin-top: 0.625rem;
+          margin-left: 1rem;
+          font-size: 1.1rem;
+          padding: 2%;
+          background-color: $background-tertiary;
+          border-radius: 0.313rem;
+          border-color: $border-tertiary;
+        }
+        .comments__button {
+          width: 12rem;
+          padding: 3%;
+          height: 3.25rem;
+          background-color: $button-primary;
+          color: $text-secondary;
+          font-size: $body-font-size-tablet;
+          border-radius: 0.313rem;
+          border: none;
+          background-image: url(../../assets/Icons/add_comment.svg);
+          background-repeat: no-repeat;
+          background-position: left;
+          background-position-x: 0.625rem;
+          background-size: 12%;
+          margin-top: 0.625rem;
+          margin-left: 3rem;
+        }
+      }
+    }
+  }
+  .comments__divider {
+    margin-top: 1.875rem;
+    transform: translateX(-3.063rem);
+  }
+  .commenter {
+    display: flex;
+    margin-top: 1rem;
+    border-bottom: $border-tertiary 0.125rem solid;
+    padding-bottom: 1rem;
+    transform: translateX(-2.813rem);
+    transform: translateX(-3.063rem);
+
+    &__image {
+      @include avatar-icon-mobile();
+    }
+    &__container {
+      display: flex;
+      flex-direction: column;
+      margin-left: 1rem;
+
+      .commenter__subcontainer {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+
+        .commenter__name {
+          font-weight: 1000;
+          font-size: $body-font-size-tablet;
+        }
+        .commenter__date {
+          font-weight: 500;
+          font-size: $body-font-size-tablet;
+          color: $text-tertiary;
+        }
+      }
+      .commenter__text {
+        font-weight: 100;
+        font-size: $body-font-size-tablet;
+      }
+    }
+    &__date {
+      color: $text-primary;
+    }
+  }
+}
+
+//Desktop Screen (above 1280 pixels)
+
+@media (min-width: 1280px) {
+  .comments {
+    padding: 5%;
+    padding-bottom: 0%;
+    padding-top: 2%;
+    font-weight: 1000;
+    display: flex;
+    flex-direction: column;
+
+    &__intro {
+      font-family: "AvenirNextLTPro--bold", sans-serif;
+    }
+    &__container {
+      display: flex;
+      margin-top: 1.125rem;
+
+      .comments__image {
+        @include avatar-icon-mobile();
+        margin-top: 1.875rem;
+      }
+      .comments__subcontainer {
+        display: flex;
+        flex-direction: column;
+        width: 45.75rem;
+      }
+      .comments__header {
+        margin-left: 1.25rem;
+        font-size: $body-font-size-desktop;
+        color: $text-tertiary;
+      }
+      .comments__form {
+        margin-left: 0.625rem;
+        display: flex;
+
+        textarea::placeholder {
+          color: $text-quinary;
+        }
+        #comment {
+          width: 28rem;
+          height: 3.25rem;
+          margin-top: 0.625rem;
+          font-size: 1.1rem;
+          padding: 2%;
+          background-color: $background-tertiary;
+          border-radius: 0.313rem;
+          border-color: $border-tertiary;
+        }
+        .comments__button {
+          width: 12rem;
+          padding: 3%;
+          height: 3.25rem;
+          background-color: $button-primary;
+          color: $text-secondary;
+          font-size: $body-font-size-desktop;
+          border-radius: 0.313rem;
+          border: none;
+          background-image: url(../../assets/Icons/add_comment.svg);
+          background-repeat: no-repeat;
+          background-position: left;
+          background-position-x: 0.625rem;
+          background-size: 12%;
+          margin-top: 0.625rem;
+          margin-left: 3rem;
+        }
+      }
+    }
+  }
+  .comments__divider {
+    margin-top: 1.875rem;
+    transform: translateX(-3.063rem);
+    width: 49.355rem;
+  }
+  .commenter {
+    display: flex;
+    margin-top: 1rem;
+    border-bottom: $border-tertiary 0.125rem solid;
+    padding-bottom: 1rem;
+    transform: translateX(-2.813rem);
+    transform: translateX(-3.563rem);
+    width: 49.85rem;
+
+    &__image {
+      @include avatar-icon-mobile();
+    }
+    &__container {
+      display: flex;
+      flex-direction: column;
+      margin-left: 1rem;
+
+      .commenter__subcontainer {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+
+        .commenter__name {
+          font-weight: 1000;
+          font-size: $body-font-size-desktop;
+        }
+        .commenter__date {
+          font-weight: 500;
+          font-size: $body-font-size-desktop;
+          color: $text-tertiary;
+          margin-right: 1.875rem;
+        }
+        .commenter__text {
+          font-weight: 100;
+          font-size: $body-font-size-desktop;
+        }
+      }
+    }
+    &__date {
+      color: $text-primary;
+    }
+  }
+}

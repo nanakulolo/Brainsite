@@ -1,0 +1,41 @@
+@use "./styles/partials/" as *;
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:"AvenirNextLTPro", Arial, Helvetica, sans-serif;
+}
+
+.App{
+  &__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .App__subcontainer{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .App{
+    &__container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap ;
+      transform: translateY(-2.25rem);
+  
+      .App__subcontainer{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+}

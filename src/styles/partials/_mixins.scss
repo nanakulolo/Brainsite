@@ -1,0 +1,18 @@
+//mixins
+
+@mixin avatar-icon-mobile(){
+  height:  3.25rem;
+  width:  3.25rem;
+  border-radius: 3.75rem;
+}
+
+@mixin avatar-icon-tablet(){
+  height:  2.75rem;
+  width:  2.75rem;
+  border-radius: 3.75rem;
+}
+
+@mixin center-image-x-axis(){
+  margin-left: auto;
+  margin-right: auto;
+}
