@@ -1,0 +1,203 @@
+@use "../../styles/partials/index" as *;
+
+//Mobile Screen (below 767 pixels)
+
+@media (max-width: 767px) {
+  .engagementMetrics__header {
+    font-family: "AvenirNextLTPro--bold";
+    padding-top: 5%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: $header-font-size-mobile;
+    height: max-content;
+  }
+  .engagmentMetrics__underline {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 80%;
+    border-color: $border-tertiary;
+    display: initial;
+  }
+
+  .engagementMetrics {
+    font-size: $body-font-size-mobile;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+
+    &__container {
+      .engagementMetrics__subcontainer {
+        color: $text-tertiary;
+        display: flex;
+        margin-top: 1rem;
+        margin-left: 0.625rem;
+
+        .engagementMetrics__channel {
+          color: $text-primary;
+          font-weight: 1000;
+        }
+
+        .engagementMetrics__image {
+          margin-right: 0.625rem;
+          width: 1.875rem;
+          height: 1.25rem;
+        }
+      }
+    }
+  }
+  .engagementMetrics__description {
+    padding: 5%;
+    padding-top: 7%;
+    line-height: 1.25rem;
+    font-weight: 500;
+    font-size: $body-font-size-mobile;
+  }
+  .engagementMetrics__divider {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+    width: 80%;
+    border-color: $border-tertiary;
+    display: initial;
+  }
+}
+
+//Tablet Screen (768 pixels - 1279 pixels)
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .engagementMetrics__header {
+    font-family: "AvenirNextLTPro--bold";
+    padding-top: 0%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: $header-font-size-tablet;
+    height: max-content;
+    border-bottom: none;
+  }
+  .engagmentMetrics__underline {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 80%;
+    border-color: $border-tertiary;
+    display: none;
+  }
+  .engagementMetrics {
+    font-size: $body-font-size-tablet;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transform: translateY(-0.625rem);
+    margin-right: 2.5rem;
+    margin-left: 1.875rem;
+    width: 85%;
+
+    &__container {
+      display: flex;
+      .engagementMetrics__subcontainer {
+        color: $text-tertiary;
+        display: flex;
+        margin-top: 1rem;
+        margin-left: 0.625rem;
+
+        .engagementMetrics__channel {
+          color: $text-primary;
+          font-family: "AvenirNextLTPro--bold";
+        }
+
+        .engagementMetrics__image {
+          margin-right: 0.625rem;
+          width: 1.875rem;
+          height: 1.25rem;
+        }
+      }
+    }
+  }
+  .engagementMetrics__description {
+    padding: 5%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    line-height: 1.25rem;
+    font-weight: 500;
+    font-size: $body-font-size-tablet;
+    width: 50rem;
+  }
+  .engagementMetrics__divider {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    width: 85%;
+    border-color: $border-tertiary;
+    transform: translateY(-1.875rem);
+  }
+}
+
+//Desktop Screen (above 1280 pixels)
+
+@media (min-width: 1280px) {
+  .engagementMetrics__header {
+    font-family: "AvenirNextLTPro--bold";
+    padding-top: 0%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: $header-font-size-desktop;
+    height: max-content;
+    transform: translateX(0.2rem);
+    margin-top: 2rem;
+  }
+  .engagementMetrics {
+    font-size: $body-font-size-desktop;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transform: translateY(-0.625rem);
+    margin-right: 0.5rem;
+    margin-left: 0.075rem;
+    width: 48rem;
+    transform: translateX(1.15rem);
+
+    &__container {
+      display: flex;
+      .engagementMetrics__subcontainer {
+        color: $text-tertiary;
+        display: flex;
+        margin-top: 1rem;
+        margin-left: 1.625rem;
+
+        .engagementMetrics__channel {
+          color: $text-primary;
+          font-family: "AvenirNextLTPro--bold";
+        }
+
+        .engagementMetrics__image {
+          margin-right: 0.625rem;
+          width: 1.875rem;
+          height: 1.25rem;
+        }
+      }
+    }
+  }
+  .engagementMetrics__description {
+    padding: 5%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    line-height: 1.25rem;
+    font-weight: 500;
+    font-size: $body-font-size-desktop;
+    width: 50rem;
+    transform: translateX(0.1rem);
+  }
+  .engagementMetrics__divider {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 49.85rem;
+    border-color: $border-tertiary;
+    transform: translateY(1.875rem);
+    transform: translateX(0.25rem);
+  }
+}

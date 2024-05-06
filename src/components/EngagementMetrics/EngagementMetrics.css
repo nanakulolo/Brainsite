@@ -1,0 +1,196 @@
+@font-face {
+  font-family: "AvenirNextLTPro";
+  src: url(../../assets/fonts/AvenirNextLTPro-Regular.otf);
+}
+@font-face {
+  font-family: "AvenirNextLTPro--bold";
+  src: url(../../assets/fonts/AvenirNextLTPro-Bold.otf);
+}
+@font-face {
+  font-family: "AvenirNextLTPro--demi";
+  src: url(../../assets/fonts/AvenirNextLTPro-Demi.otf);
+}
+@media (max-width: 767px) {
+  .engagementMetrics__header {
+    font-family: "AvenirNextLTPro--bold";
+    padding-top: 5%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 2rem;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .engagmentMetrics__underline {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 80%;
+    border-color: #E1E1E1;
+    display: initial;
+  }
+  .engagementMetrics {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+  }
+  .engagementMetrics__container .engagementMetrics__subcontainer {
+    color: #afafaf;
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 0.625rem;
+  }
+  .engagementMetrics__container .engagementMetrics__subcontainer .engagementMetrics__channel {
+    color: #323232;
+    font-weight: 1000;
+  }
+  .engagementMetrics__container .engagementMetrics__subcontainer .engagementMetrics__image {
+    margin-right: 0.625rem;
+    width: 1.875rem;
+    height: 1.25rem;
+  }
+  .engagementMetrics__description {
+    padding: 5%;
+    padding-top: 7%;
+    line-height: 1.25rem;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  .engagementMetrics__divider {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+    width: 80%;
+    border-color: #E1E1E1;
+    display: initial;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .engagementMetrics__header {
+    font-family: "AvenirNextLTPro--bold";
+    padding-top: 0%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1.75rem;
+    height: -moz-max-content;
+    height: max-content;
+    border-bottom: none;
+  }
+  .engagmentMetrics__underline {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 80%;
+    border-color: #E1E1E1;
+    display: none;
+  }
+  .engagementMetrics {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transform: translateY(-0.625rem);
+    margin-right: 2.5rem;
+    margin-left: 1.875rem;
+    width: 85%;
+  }
+  .engagementMetrics__container {
+    display: flex;
+  }
+  .engagementMetrics__container .engagementMetrics__subcontainer {
+    color: #afafaf;
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 0.625rem;
+  }
+  .engagementMetrics__container .engagementMetrics__subcontainer .engagementMetrics__channel {
+    color: #323232;
+    font-family: "AvenirNextLTPro--bold";
+  }
+  .engagementMetrics__container .engagementMetrics__subcontainer .engagementMetrics__image {
+    margin-right: 0.625rem;
+    width: 1.875rem;
+    height: 1.25rem;
+  }
+  .engagementMetrics__description {
+    padding: 5%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    line-height: 1.25rem;
+    font-weight: 500;
+    font-size: 1rem;
+    width: 50rem;
+  }
+  .engagementMetrics__divider {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    width: 85%;
+    border-color: #E1E1E1;
+    transform: translateY(-1.875rem);
+  }
+}
+@media (min-width: 1280px) {
+  .engagementMetrics__header {
+    font-family: "AvenirNextLTPro--bold";
+    padding-top: 0%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 2rem;
+    height: -moz-max-content;
+    height: max-content;
+    transform: translateX(0.2rem);
+    margin-top: 2rem;
+  }
+  .engagementMetrics {
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transform: translateY(-0.625rem);
+    margin-right: 0.5rem;
+    margin-left: 0.075rem;
+    width: 48rem;
+    transform: translateX(1.15rem);
+  }
+  .engagementMetrics__container {
+    display: flex;
+  }
+  .engagementMetrics__container .engagementMetrics__subcontainer {
+    color: #afafaf;
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 1.625rem;
+  }
+  .engagementMetrics__container .engagementMetrics__subcontainer .engagementMetrics__channel {
+    color: #323232;
+    font-family: "AvenirNextLTPro--bold";
+  }
+  .engagementMetrics__container .engagementMetrics__subcontainer .engagementMetrics__image {
+    margin-right: 0.625rem;
+    width: 1.875rem;
+    height: 1.25rem;
+  }
+  .engagementMetrics__description {
+    padding: 5%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    line-height: 1.25rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+    width: 50rem;
+    transform: translateX(0.1rem);
+  }
+  .engagementMetrics__divider {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 49.85rem;
+    border-color: #E1E1E1;
+    transform: translateY(1.875rem);
+    transform: translateX(0.25rem);
+  }
+}/*# sourceMappingURL=EngagementMetrics.css.map */
