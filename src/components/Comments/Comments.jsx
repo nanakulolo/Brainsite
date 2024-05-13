@@ -4,6 +4,11 @@ import avatar from "../../assets/images/avatar.jpg";
 
 function Comments(props) { 
   const formatDate = props.formatDate;
+
+  if (!props.selectedVideo || !props.selectedVideo.comments) {
+    // Handle the case where selectedVideo or selectedVideo.comments is undefined
+    return <p>loading comments...</p> ; // render a loading message,
+  }
   return (
     <div className="comments">
       <h3 className="comments__intro">3 Comments</h3>
@@ -23,7 +28,7 @@ function Comments(props) {
           <hr className="comments__divider"></hr>
           {props.selectedVideo.comments.map((comment) => {
             return (
-              <div className="commenter">
+              <div className="commenter" key={comment.id}>
                 <img
                   className="commenter__image"
                   src={avatar}

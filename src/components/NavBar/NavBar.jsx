@@ -3,6 +3,7 @@ import mohan from "../../assets/images/Mohan-muruge.jpg";
 import "./NavBar.scss";
 
 function NavBar() {
+  
   return (
     <div className="nav">
       <a className="nav__link" href="../../App.jsx">
@@ -13,10 +14,10 @@ function NavBar() {
           <input type="text" id="search" required placeholder="Search"></input>
           <img className="nav__avatar" src={mohan} alt="mohan"></img>
           <button className="nav__button" type="submit">
-            Upload
-          </button>
+          Upload
+        </button>
         </div>
-        
+      
       </form>
     </div>
   );

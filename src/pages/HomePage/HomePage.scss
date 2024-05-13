@@ -1,0 +1,29 @@
+.home{
+    &__container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  
+      .home__subcontainer{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .home{
+      &__container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap ;
+        transform: translateY(-2.25rem);
+    
+        .home__subcontainer{
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  
+  }

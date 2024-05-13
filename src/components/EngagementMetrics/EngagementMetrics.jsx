@@ -6,8 +6,8 @@ function EngagementMetrics(props) {
   const formatDate = props.formatDate;
   const selectedVideo = props.selectedVideo; 
   return (
-    <>
-      <h1 className="engagementMetrics__header">{props.selectedVideo.title}</h1>
+   <>
+     <h1 className="engagementMetrics__header">{props.selectedVideo.title}</h1> 
       <hr className="engagmentMetrics__underline"></hr>
       <div className="engagementMetrics">
         <div className="engagementMetrics__container">

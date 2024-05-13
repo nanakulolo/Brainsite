@@ -2,7 +2,7 @@
 
 //Mobile Screen (below 767 pixels)
 
-@media (min-width: 767px) {
+@media (max-width: 767px) {
   .selection {
     display: flex;
     flex-direction: column;
