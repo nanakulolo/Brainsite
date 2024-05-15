@@ -7,19 +7,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import "./HomePage.scss";
 
-// Make a GET request to /register endpoint
-fetch('https://unit-3-project-api-0a5620414506.herokuapp.com/register')
-  .then(response => response.json())
-  .then(data => {
-    // Store the API key securely
-    const apiKey = data.api_key;
-    // Use the API key in subsequent requests
-    console.log("API Key:", apiKey);
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
-  
+const apiKey = "39c22b59-1e20-4680-bf84-be2e04fbe798"
 const defaultVideoId = "84e96018-4022-434e-80bf-000ce4cd12b8";
 
 function HomePage() {
