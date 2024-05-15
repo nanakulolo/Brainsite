@@ -6,16 +6,19 @@ function NavBar() {
   
   return (
     <div className="nav">
-      <a className="nav__link" href="../../App.jsx">
+      <link to="/" className="nav__link">
         <img className="nav__logo" src={logo} alt="BrainFlix"></img>
-      </a>
+      </link>
       <form className="nav__input">
         <div className="nav__subcontainer">
           <input type="text" id="search" required placeholder="Search"></input>
           <img className="nav__avatar" src={mohan} alt="mohan"></img>
-          <button className="nav__button" type="submit">
-          Upload
-        </button>
+          <link to="/upload" className="nav__link">
+            <button className="nav__button" type="submit">
+              upload
+            </button>
+          </link>
+
         </div>
       
       </form>
